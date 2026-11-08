@@ -131,3 +131,48 @@ a {
 }
 
 /* Da qui in giù scrivi tu: le colonne con Grid e il banner */
+
+.row {
+	display:Grid;
+	gap: 24px;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+ /*
+@media  screen and ( min-width: 677px) {
+	.row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr );
+		
+	}
+	
+}
+ 
+@media  screen and ( min-width: 1200px) {
+	.row {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr );
+		
+	}
+	
+}
+
+.banner {
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+
+}
+
+@media screen and (min-width: 677px){
+	.banner{
+		grid-column: 1 / span 2;
+
+	}
+}
+
+@media screen and (min-width: 1201px){
+	.banner {
+		grid-column: 1 / span 4;
+		grid-row: 3;
+	}
+}
+	
